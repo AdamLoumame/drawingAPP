@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/ab3056bc7e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Space Riders</title>
+  </head>
+  <body>
+    <div class="wave x"></div>
+    <div class="wave1 x"></div>
+    <div class="wave2 x"></div>
+    <div class="container">
+      <canvas class="canvas"></canvas>
+      <div class="tools">
+        <div class="buttons">
+            <button class="undo"><i class="fas fa-undo fa-2x"></i></button>
+            <button class="clear"><i class="fa-solid fa-trash-can fa-2x"></i></button>
+        </div>
+
+        <div class="colors">
+          <div>
+            <div class="color-field" onclick="changeColor(this)" style="background-color: #0077b6;margin: 0 5px 5px 0;"></div>
+            <div class="color-field"  onclick="changeColor(this)" style="background-color: #00a676;margin: 5px 5px 0 0;"></div>
+          </div>
+          <div>
+            <div class="color-field"  onclick="changeColor(this)" style="background-color: #ffd166;margin: 0 0 5px 5px;"></div>
+            <div class="color-field"  onclick="changeColor(this)" style="background-color: #ff595e;margin: 5px 0 0 5px;"></div>
+          </div>
+        </div>
+
+        <input type="color" oninput="changeColor2(this)" class="color-picker" />
+        <input type="range" oninput="changeWhidth(this)" min="10" max="100" class="weight" value="10"/>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
